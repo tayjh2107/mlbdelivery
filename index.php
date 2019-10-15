@@ -1,20 +1,4 @@
 <?php
-$dsn = getenv('MYSQL_DSN');
-$user = getenv('MYSQL_USER');
-$password = getenv('MYSQL_PASSWORD');
-
-$conn = mysqli_connect(null, $user, $password, 'mlb', null,'/cloudsql/clean-skill-247505:australia-southeast1:myinstance;dbname=mlb');
-
-if($conn === false){
-		die("ERROR: Could not connect." . mysql_connect_error());
-
-}
-
-	else{
-		echo("Connected");
-
-}
-
 
 session_start();
 if(isset($_SESSION['username']))
